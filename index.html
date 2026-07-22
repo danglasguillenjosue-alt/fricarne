@@ -40,43 +40,25 @@
 
   <!-- Schema.org: Restaurant / FoodEstablishment -->
   <script src="script.js"></script>
-  {
-    "@context": "https://schema.org",
-    "@type": "FoodEstablishment",
-    "name": "FriCarne",
-    "image": "https://www.fricarne.com/img/hero-fachada.jpg",
-    "logo": "https://www.fricarne.com/img/logo.jpg",
-    "@id": "https://www.fricarne.com/",
-    "url": "https://www.fricarne.com/",
-    "telephone": "+505-0000-0000",
-    "servesCuisine": "Nicaragüense",
-    "priceRange": "C$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Carretera Los Pocitos, frente a [referencia]",
-      "addressLocality": "Los Pocitos",
-      "addressRegion": "Rivas",
-      "addressCountry": "NI"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "11.2",
-      "longitude": "-85.75"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "07:00",
-        "closes": "19:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/fricarne",
-      "https://www.instagram.com/fricarne"
-    ]
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "FriCarne",
+  "url": "https://danglasguillenjosue-alt.github.io/fricarne/",
+  "image": "img/hero-fachada.jpg",
+  "logo": "img/logo.jpg",
+  "telephone": "+505-0000-0000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carretera Los Pocitos",
+    "addressLocality": "Los Pocitos",
+    "addressRegion": "Rivas",
+    "addressCountry": "NI"
   }
-  </script>
+}
+</script>
+  
 </head>
 <body>
 
