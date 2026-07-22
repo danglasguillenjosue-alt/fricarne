@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FriCarne — Carnicería y Chicharronería Artesanal en Los Pocitos, Rivas</title>
+  <meta name="description" content="FriCarne: carnicería, frutería y chicharrones artesanales en Los Pocitos, Rivas. Carne fresca cortada al momento, chicharrón crocante y tajadas doradas. Pedidos por WhatsApp.">
+  <meta name="keywords" content="chicharrones Rivas, carnicería Los Pocitos, FriCarne, chicharrón artesanal Nicaragua, carne fresca Rivas, frutería Los Pocitos">
+  <meta name="author" content="FriCarne">
+  <link rel="canonical" href="https://www.fricarne.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="FriCarne — Carnicería y Chicharronería Artesanal">
+  <meta property="og:description" content="Carne fresca, chicharrón crocante y tajadas doradas. Tradición y sabor en Los Pocitos, Rivas.">
+  <meta property="og:image" content="https://www.fricarne.com/img/hero-fachada.jpg">
+  <meta property="og:url" content="https://www.fricarne.com/">
+  <meta property="og:locale" content="es_NI">
+  <meta property="og:site_name" content="FriCarne">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FriCarne — Carnicería y Chicharronería Artesanal">
+  <meta name="twitter:description" content="Carne fresca, chicharrón crocante y tajadas doradas en Los Pocitos, Rivas.">
+  <meta name="twitter:image" content="https://www.fricarne.com/img/hero-fachada.jpg">
+
+  <meta name="theme-color" content="#17120f">
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+  <link rel="apple-touch-icon" href="img/logo.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Work+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org: Restaurant / FoodEstablishment -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "FriCarne",
+    "image": "https://www.fricarne.com/img/hero-fachada.jpg",
+    "logo": "https://www.fricarne.com/img/logo.jpg",
+    "@id": "https://www.fricarne.com/",
+    "url": "https://www.fricarne.com/",
+    "telephone": "+505-0000-0000",
+    "servesCuisine": "Nicaragüense",
+    "priceRange": "C$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carretera Los Pocitos, frente a [referencia]",
+      "addressLocality": "Los Pocitos",
+      "addressRegion": "Rivas",
+      "addressCountry": "NI"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "11.2",
+      "longitude": "-85.75"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/fricarne",
+      "https://www.instagram.com/fricarne"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <svg viewBox="0 0 120 120" class="loader-ring">
+        <circle cx="60" cy="60" r="52"></circle>
+      </svg>
+      <span class="loader-text">FriCarne</span>
+    </div>
+  </div>
+
+  <!-- Skip link -->
+  <a href="#inicio" class="skip-link">Saltar al contenido</a>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#inicio" class="brand">
+        <img src="img/logo.jpg" alt="FriCarne" class="brand-mark">
+        <span class="brand-name">Fri<em>Carne</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#menu">Menú</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Cambiar modo claro/oscuro" title="Modo claro/oscuro">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#menu" class="btn btn-primary btn-sm">Ordenar Ahora</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="img/hero-fachada.jpg" alt="Fachada del local FriCarne en Los Pocitos, Rivas, con vitrina de carnes y frutería" loading="eager">
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Carnicería · Frutería · Chicharronería</p>
+      <h1 class="hero-title" data-reveal>
+        <span class="hero-title-line">Corte fresco.</span>
+        <span class="hero-title-line hero-title-accent">Chicharrón de verdad.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        En Los Pocitos, Rivas, freímos el chicharrón como se hace desde siempre:
+        despacio, en su propia manteca, hasta que truena al primer mordisco.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#menu" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-bag-shopping"></i> Ordenar Ahora
+        </a>
+        <a href="#ubicacion" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-location-dot"></i> Cómo Llegar
+        </a>
+      </div>
+    </div>
+
+    <a href="#nosotros" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- HOOK RAIL DIVIDER -->
+  <div class="hook-rail" aria-hidden="true">
+    <svg class="hook-rail-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <line x1="0" y1="6" x2="1200" y2="6" stroke="currentColor" stroke-width="2"></line>
+    </svg>
+  </div>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="section about">
+    <div class="container about-grid">
+      <div class="about-media" data-reveal>
+        <img src="img/galeria-carniceria.jpg" alt="Cortes de carne fresca colgados en el área de despiece de FriCarne" loading="lazy">
+        <div class="seal" id="seal">
+          <svg viewBox="0 0 200 200" class="seal-svg">
+            <path id="sealCirclePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" fill="none"></path>
+            <text font-size="13.5" letter-spacing="3" fill="currentColor">
+              <textPath href="#sealCirclePath" startOffset="0%">CALIDAD GARANTIZADA • HECHO A MANO • LOS POCITOS •</textPath>
+            </text>
+          </svg>
+          <div class="seal-core">
+            <i class="fa-solid fa-award"></i>
+            <span>100%<br>Fresco</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow" data-reveal>Nuestra historia</p>
+        <h2 data-reveal>De la vitrina de barrio a la mesa de tu familia</h2>
+        <p data-reveal>
+          FriCarne nació como una carnicería de vecindario en Los Pocitos y creció sumando
+          frutería y una cocina propia de chicharrones. Cada res se despieza en casa,
+          cada chicharrón se fríe el mismo día, y cada tajada se corta a mano antes de dorarse.
+        </p>
+        <p data-reveal>
+          No trabajamos por volumen, trabajamos por confianza: la misma que nos permite
+          colgar la carne a la vista, mostrar la fritura en la ventana y mirar a los ojos
+          a quien nos compra hace años.
+        </p>
+
+        <div class="about-features">
+          <div class="feature" data-reveal>
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <h3>Ingredientes frescos</h3>
+              <p>Carne y producto seleccionados cada mañana, sin congelados de relleno.</p>
+            </div>
+          </div>
+          <div class="feature" data-reveal>
+            <i class="fa-solid fa-fire-burner"></i>
+            <div>
+              <h3>Fritura artesanal</h3>
+              <p>Chicharrón cocido lento en manteca propia, no en aceite reciclado.</p>
+            </div>
+          </div>
+          <div class="feature" data-reveal>
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <div>
+              <h3>Trato de barrio</h3>
+              <p>Pedidos a la medida, al peso o por libra, como lo pida la casa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hook-rail hook-rail-flip" aria-hidden="true">
+    <svg class="hook-rail-svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <line x1="0" y1="6" x2="1200" y2="6" stroke="currentColor" stroke-width="2"></line>
+    </svg>
+  </div>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section gallery-section">
+    <div class="container">
+      <p class="eyebrow center" data-reveal>La casa por dentro</p>
+      <h2 class="center" data-reveal>Galería</h2>
+      <p class="section-sub center" data-reveal>Así se ve, se corta y se fríe todos los días.</p>
+
+      <div class="masonry" data-reveal>
+        <button class="masonry-item tall" data-full="img/hero-fachada.jpg" data-caption="Fachada de FriCarne en Los Pocitos">
+          <img src="img/hero-fachada.jpg" alt="Fachada iluminada de FriCarne al atardecer" loading="lazy">
+          <span class="masonry-caption"><i class="fa-solid fa-expand"></i> Fachada</span>
+        </button>
+        <button class="masonry-item" data-full="img/galeria-carniceria.jpg" data-caption="Área de despiece">
+          <img src="img/galeria-carniceria.jpg" alt="Cortes de res colgados en el área de despiece" loading="lazy">
+          <span class="masonry-caption"><i class="fa-solid fa-expand"></i> Despiece</span>
+        </button>
+        <button class="masonry-item" data-full="img/menu-chicharron.jpg" data-caption="Chicharrón y tajadas recién fritas">
+          <img src="img/menu-chicharron.jpg" alt="Chicharrón de cerdo y tajadas de plátano recién fritas" loading="lazy">
+          <span class="masonry-caption"><i class="fa-solid fa-expand"></i> Fritura del día</span>
+        </button>
+        <button class="masonry-item wide" data-full="img/galeria-fruteria.jpg" data-caption="Rincón de frutería">
+          <img src="img/galeria-fruteria.jpg" alt="Estantes de frutas y verduras frescas en FriCarne" loading="lazy">
+          <span class="masonry-caption"><i class="fa-solid fa-expand"></i> Frutería</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="" id="lightboxImg">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <p class="eyebrow center" data-reveal>Directo del comal a tu bolsa</p>
+      <h2 class="center" data-reveal>Menú</h2>
+      <p class="section-sub center" data-reveal>Precios de referencia — confirmá el precio del día por WhatsApp.</p>
+
+      <div class="menu-filter" data-reveal role="tablist" aria-label="Filtrar menú">
+        <button class="filter-chip active" data-filter="all">Todo</button>
+        <button class="filter-chip" data-filter="fritura">Fritura</button>
+        <button class="filter-chip" data-filter="carne">Carnicería</button>
+        <button class="filter-chip" data-filter="fruteria">Frutería</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="menu-card" data-cat="fritura" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/menu-chicharron.jpg" alt="Chicharrón de cerdo dorado" loading="lazy">
+            <span class="tag-badge">Más pedido</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Chicharrón crocante</h3>
+              <span class="price">C$ 90 / lb</span>
+            </div>
+            <p>Cerdo frito lento en su propia manteca, dorado por fuera y jugoso por dentro.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Chicharrón crocante" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="fritura" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/menu-chicharron.jpg" alt="Tajadas fritas de plátano" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Tajadas de plátano</h3>
+              <span class="price">C$ 40 / lb</span>
+            </div>
+            <p>Plátano verde cortado a mano y frito hasta quedar dorado y crujiente.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Tajadas de plátano" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="fritura" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/menu-chicharron.jpg" alt="Combo de chicharrón con tajadas" loading="lazy">
+            <span class="tag-badge">Combo</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Combo chicharrón + tajadas</h3>
+              <span class="price">C$ 120</span>
+            </div>
+            <p>Media libra de chicharrón con tajadas y curtido, listo para comer.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Combo chicharrón + tajadas" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="carne" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/galeria-carniceria.jpg" alt="Corte de lomo de res fresco" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Lomo de res</h3>
+              <span class="price">C$ 130 / lb</span>
+            </div>
+            <p>Cortado al momento frente al cliente, al grosor que pida la casa.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Lomo de res" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="carne" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/galeria-carniceria.jpg" alt="Costilla de res fresca" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Costilla de res</h3>
+              <span class="price">C$ 100 / lb</span>
+            </div>
+            <p>Ideal para sopa o asado, con el hueso justo para dar sabor.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Costilla de res" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-cat="fruteria" data-reveal>
+          <div class="menu-card-img">
+            <img src="img/galeria-fruteria.jpg" alt="Canasta de frutas y verduras frescas" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-head">
+              <h3>Canasta básica del día</h3>
+              <span class="price">Desde C$ 150</span>
+            </div>
+            <p>Selección de frutas y verduras frescas, armada según lo que traiga la casa.</p>
+            <a class="btn btn-outline btn-block whatsapp-order" data-item="Canasta básica del día" href="#">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section id="opiniones" class="section reviews-section">
+    <div class="container">
+      <p class="eyebrow center" data-reveal>Lo que dice el barrio</p>
+      <h2 class="center" data-reveal>Opiniones</h2>
+
+      <div class="reviews-grid">
+        <blockquote class="review-card" data-reveal>
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>“El chicharrón sale calientito y sin exceso de grasa. Se nota que lo fríen con calma.”</p>
+          <cite>— Cliente frecuente, Los Pocitos</cite>
+        </blockquote>
+
+        <blockquote class="review-card" data-reveal>
+          <div class="stars" aria-label="5 de 5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>“Compro la carne aquí porque la cortan al momento y explican bien cada corte.”</p>
+          <cite>— Cliente de la zona</cite>
+        </blockquote>
+
+        <blockquote class="review-card" data-reveal>
+          <div class="stars" aria-label="4.5 de 5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>“Buena atención y la frutería siempre tiene producto fresco, no lo del día anterior.”</p>
+          <cite>— Cliente habitual</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACION -->
+  <section id="ubicacion" class="section location-section">
+    <div class="container location-grid">
+      <div class="location-copy" data-reveal>
+        <p class="eyebrow">Visítanos</p>
+        <h2>Ubicación</h2>
+        <ul class="location-list">
+          <li><i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Dirección</strong>
+              <span>Carretera Los Pocitos, Rivas, Nicaragua — [agregar referencia exacta]</span>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lunes a domingo: 7:00 a.m. – 7:00 p.m. <em>(confirmar horario real)</em></span>
+            </div>
+          </li>
+          <li><i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Teléfono</strong>
+              <span>+505 0000 0000</span>
+            </div>
+          </li>
+        </ul>
+        <a class="btn btn-primary" href="https://maps.app.goo.gl/RtMErKtivVY4zaz86" target="_blank" rel="noopener">
+          <i class="fa-solid fa-diamond-turn-right"></i> Abrir en Google Maps
+        </a>
+      </div>
+
+      <div class="location-map" data-reveal>
+        <iframe
+          title="Mapa de ubicación de FriCarne en Los Pocitos, Rivas"
+          src="https://www.google.com/maps?q=Fri+Carne+chicharrones+Los+Pocitos+Rivas&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <p class="eyebrow center" data-reveal>Hablemos</p>
+      <h2 class="center" data-reveal>Contacto</h2>
+      <p class="section-sub center" data-reveal>Escribinos y coordinamos tu pedido o tu encargo especial.</p>
+
+      <div class="contact-grid">
+        <a class="contact-card" data-reveal href="https://wa.me/50500000000" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+          <small>+505 0000 0000</small>
+        </a>
+        <a class="contact-card" data-reveal href="tel:+50500000000">
+          <i class="fa-solid fa-phone"></i>
+          <span>Llamar</span>
+          <small>+505 0000 0000</small>
+        </a>
+        <a class="contact-card" data-reveal href="https://facebook.com/fricarne" target="_blank" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+          <small>@fricarne</small>
+        </a>
+        <a class="contact-card" data-reveal href="https://instagram.com/fricarne" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+          <small>@fricarne</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <p class="eyebrow center" data-reveal>Antes de escribirnos</p>
+      <h2 class="center" data-reveal>Preguntas frecuentes</h2>
+
+      <div class="accordion" data-reveal>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>¿Puedo encargar cortes especiales de carne?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="accordion-panel">
+            <p>Sí. Escribinos por WhatsApp con el corte, el peso aproximado y el día que lo necesitás, y te confirmamos disponibilidad y precio.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>¿El chicharrón se vende por libra o por porción?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="accordion-panel">
+            <p>Se vende por libra, y también armamos combos individuales con tajadas y curtido para llevar.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>¿Hacen entregas a domicilio?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="accordion-panel">
+            <p>Coordinamos entregas dentro de Los Pocitos y alrededores según disponibilidad. Consultá por WhatsApp antes de pedir.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>¿Qué días tienen fruta y verdura más fresca?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="accordion-panel">
+            <p>Recibimos producto seguido durante la semana; si buscás algo puntual, escribinos y te decimos si hay en existencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo.jpg" alt="FriCarne" class="footer-logo">
+        <p>Carnicería, frutería y chicharronería en Los Pocitos, Rivas.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/50500000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+50500000000">+505 0000 0000</a>
+        <a href="https://facebook.com/fricarne" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/fricarne" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horario</h4>
+        <p>Lun – Dom<br>7:00 a.m. – 7:00 p.m.</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> FriCarne. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/50500000000" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Escribir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
